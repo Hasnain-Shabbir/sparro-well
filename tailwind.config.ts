@@ -8,9 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontSize: {
+        xss: "10px",
+        xs: "12px",
+        sm: "14px",
+        base: "16px",
+        lg: "18px",
+        xl: "24px",
+        "2xl": "32px",
+        "3xl": "40px",
+        "4xl": "48px",
+        "5xl": "56px",
+        "6xl": "60px",
       },
     },
   },
