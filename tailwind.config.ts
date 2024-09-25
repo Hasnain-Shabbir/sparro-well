@@ -7,6 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    boxShadow: {
+      xs: "0px 1.705px 8px 2px rgba(0, 0, 0, 0.10)",
+      sm: "0px 13.642px 33px -3.411px rgba(0, 0, 0, 0.10), 0px 1.705px 3.411px 0px rgba(0, 0, 0, 0.04)",
+      md: "0px 20.464px 40.927px -6.821px rgba(0, 0, 0, 0.12), 0px 1.705px 3.411px 0px rgba(0, 0, 0, 0.04)",
+      lg: "0px 34.106px 68.212px -13.642px rgba(0, 0, 0, 0.16), 0px 1.705px 3.411px 0px rgba(0, 0, 0, 0.04)",
+      xl: "0px 47.749px 95.497px -17.053px rgba(0, 0, 0, 0.18), 0px 1.705px 3.411px 0px rgba(0, 0, 0, 0.04)",
+    },
     extend: {
       colors: {
         primary: {
