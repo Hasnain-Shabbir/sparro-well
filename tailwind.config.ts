@@ -109,6 +109,7 @@ const config: Config = {
       size: {
         7.5: '30px',
         12.5: '52px',
+        17: '72px',
       },
     },
   },
