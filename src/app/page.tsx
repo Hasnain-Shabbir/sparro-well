@@ -1,12 +1,12 @@
 'use client';
-import { Toggle } from '@/components';
+import { AppCheckbox } from '@/components';
 import React from 'react';
 
 export default function Home() {
   return (
     <>
       <div className="p-20">
-        <Toggle label="Label" id="label" subTitle="This is helper text" />
+        <AppCheckbox label="Label" id="label" size='md'/>
       </div>
     </>
   );
