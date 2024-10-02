@@ -95,9 +95,6 @@ const config: Config = {
       },
       fontSize: {
         xss: '10px',
-        xs: '12px',
-        sm: '14px',
-        base: '16px',
         md: '18px',
         lg: '24px',
         xl: '32px',
@@ -110,6 +107,9 @@ const config: Config = {
         7.5: '30px',
         12.5: '52px',
         17: '72px',
+      },
+      lineHeight: {
+        sm: '1.22',
       },
     },
   },
