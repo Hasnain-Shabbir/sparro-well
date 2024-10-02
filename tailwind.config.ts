@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  darkMode: ['class'],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,6 +14,9 @@ const config: Config = {
       md: '0px 20.464px 40.927px -6.821px rgba(0, 0, 0, 0.12), 0px 1.705px 3.411px 0px rgba(0, 0, 0, 0.04)',
       lg: '0px 34.106px 68.212px -13.642px rgba(0, 0, 0, 0.16), 0px 1.705px 3.411px 0px rgba(0, 0, 0, 0.04)',
       xl: '0px 47.749px 95.497px -17.053px rgba(0, 0, 0, 0.18), 0px 1.705px 3.411px 0px rgba(0, 0, 0, 0.04)',
+    },
+    fontFamily: {
+      inter: '"Inter", sans-serif',
     },
     extend: {
       colors: {
@@ -91,19 +95,25 @@ const config: Config = {
       },
       fontSize: {
         xss: '10px',
-        xs: '12px',
-        sm: '14px',
-        base: '16px',
-        lg: '18px',
-        xl: '24px',
-        '2xl': '32px',
-        '3xl': '40px',
-        '4xl': '48px',
-        '5xl': '56px',
-        '6xl': '60px',
+        md: '18px',
+        lg: '24px',
+        xl: '32px',
+        '2xl': '40px',
+        '3xl': '48px',
+        '4xl': '56px',
+        '5xl': '60px',
+      },
+      size: {
+        7.5: '30px',
+        12.5: '52px',
+        17: '72px',
+      },
+      lineHeight: {
+        sm: '1.22',
       },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require('tailwindcss-animate')],
 };
 export default config;
