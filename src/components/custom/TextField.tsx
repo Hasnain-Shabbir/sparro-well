@@ -9,20 +9,20 @@ interface TextFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
-  ({ error, inputSize = 'md', label, disabled, ...props }, ref) => {
+  ({ disabled, error, id, inputSize = 'md', label, ...props }, ref) => {
     const inputLabelGap = inputSize === 'sm' ? 'space-y-1' : 'space-y-2';
 
     return (
       <div className={inputLabelGap}>
         {label && (
-          <Label disabled={disabled} htmlFor="input" size={inputSize}>
+          <Label disabled={disabled} htmlFor={id} size={inputSize}>
             {label}
           </Label>
         )}
         <Input
           disabled={disabled}
           error={error}
-          id="input"
+          id={id}
           inputSize={inputSize}
           ref={ref}
           {...props}
