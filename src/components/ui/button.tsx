@@ -69,7 +69,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
               ? 'p-1 size-12.5'
               : '';
 
-    if (variant === 'link' && href) {
+    if (href) {
       return (
         <Link href={href} passHref>
           <span
