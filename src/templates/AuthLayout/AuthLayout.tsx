@@ -21,7 +21,9 @@ const AuthLayout: React.FC<AuthLayoutProps> = ({
         </Link>
         <div className="space-y-4 rounded-xl px-4 py-6 shadow-xs sm:w-[350px]">
           <div className="space-y-1 text-center">
-            <Typography variant="h6">{title}</Typography>
+            <Typography fontWeight="semibold" variant="h6">
+              {title}
+            </Typography>
             <Typography className="text-neutral-700" variant="body3">
               {subTitle}
             </Typography>
