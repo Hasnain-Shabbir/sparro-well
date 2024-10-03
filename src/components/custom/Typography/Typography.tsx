@@ -4,13 +4,13 @@ import { getFontWeight, variantMapping, variantStyles } from './typography';
 import { TypographyProps } from './Typography.types';
 
 const Typography = React.forwardRef<HTMLElement, TypographyProps>(
-  ({ as, children, styles = '', fontWeight, variant, ...props }, ref) => {
+  ({ as, children, className = '', fontWeight, variant, ...props }, ref) => {
     const Component = (as || variantMapping[variant]) as React.ElementType;
 
     const classes = cn(
       getFontWeight(variant, fontWeight),
       variantStyles[variant],
-      styles,
+      className,
     );
 
     return (
