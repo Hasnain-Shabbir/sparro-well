@@ -7,7 +7,7 @@ import { tw } from '@/utils';
 
 const buttonVariants = cva(
   tw(
-    'inline-flex items-center justify-center whitespace-nowrap rounded-lg font-inter text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50',
+    'inline-flex items-center justify-center whitespace-nowrap rounded-lg font-inter text-sm font-medium outline-none transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50',
   ),
   {
     variants: {
