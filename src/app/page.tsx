@@ -1,8 +1,15 @@
+'use client';
+import React from 'react';
+import { Typography } from '@/components';
+
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="text-6xl font-bold">Hello this is</h1>
-      <div className="size-32 bg-white shadow-xl"></div>
-    </div>
+    <>
+      <div className="p-20">
+        <Typography variant="h1" fontWeight="extrabold">
+          This is Heading 1
+        </Typography>
+      </div>
+    </>
   );
 }
